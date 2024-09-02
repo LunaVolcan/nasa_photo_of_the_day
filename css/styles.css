@@ -9,13 +9,13 @@
     --slime: #A0CE3E;
     --main-font: "New Amsterdam", sans-serif;
     --secondary-font: "Baskervville SC", serif;
-    
+
 }
 
 body {
-  background-color: var(--body-color); 
- font-family: var(--secondary-font);
-} 
+    background-color: var(--body-color);
+    font-family: var(--secondary-font);
+}
 
 #initial-container {
     max-width: 100%;
@@ -39,20 +39,26 @@ h1 {
     color: var(--main-text-color);
     letter-spacing: .25rem;
     -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: black;
 }
 
 button {
     padding: .5rem 1rem .5rem 1rem;
     border-radius: 50px;
     border: none;
+    display: block;
+    margin: auto;
     font-family: "Baskervville SC", serif;
     font-size: large;
-    background: linear-gradient(45deg, #25a7ae, var(--slime), var(--main-text-color) );
+    background: linear-gradient(45deg, #25a7ae, var(--slime), var(--main-text-color));
 }
 
 button:hover {
-    background: linear-gradient(45deg, var(--main-text-color), var(--slime),#25a7ae  );
+    background: linear-gradient(45deg, var(--main-text-color), var(--slime), #25a7ae);
+}
+
+#reset-button {
+    display: none;
 }
 
 img {
@@ -68,8 +74,8 @@ h2 {
     font-weight: lighter;
     text-align: center;
     background: -webkit-linear-gradient(#25a7ae, var(--slime), var(--main-text-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -78,23 +84,21 @@ p {
 }
 
 @media (min-width: 300px) and (max-width: 699px) {
-   
-#photos-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
 
-img {
-    margin: 10px 0;
-}
+    #photos-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-
+    img {
+        margin: 10px 0;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 914px) {
 
-    #photos-container   {
+    #photos-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -102,21 +106,21 @@ img {
     }
 
     .photo-card img {
-        grid-row: 2; 
+        grid-row: 2;
     }
 
     .photo-card h2 {
-        grid-row: 1; 
+        grid-row: 1;
     }
 
     .photo-card p {
-        grid-row: 3; 
+        grid-row: 3;
     }
 }
 
 @media (min-width:915px) and (max-width: 1500px) {
 
-    #photos-container   {
+    #photos-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -124,15 +128,15 @@ img {
     }
 
     .photo-card img {
-        grid-row: 2; 
+        grid-row: 2;
     }
 
     .photo-card h2 {
-        grid-row: 1; 
+        grid-row: 1;
     }
 
     .photo-card p {
-        grid-row: 3; 
+        grid-row: 3;
     }
 
     img {
@@ -140,5 +144,4 @@ img {
         height: auto;
         width: auto;
     }
-
 }
