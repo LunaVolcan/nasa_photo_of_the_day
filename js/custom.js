@@ -1,4 +1,4 @@
-const apiKey = 'JbAGIaRfUWt61OG53lI2foz0syjthvXsahdW7cgZ'
+const apiKey = 'le5Gjgtiv0mihum0Nt8ie9rpXz733mwNOYBH0cYN'
 const apiUrl = 'https://api.nasa.gov/planetary/apod'
 const photoContainer = document.getElementById('photos-container')
 const loadDataButton= document.getElementById('load-data')
