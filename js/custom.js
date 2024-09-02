@@ -42,7 +42,7 @@ function displayData(data) {
         <div>${mediaContent}</div>
         <p>${data.explanation}</p>
         <p>Date: ${data.date}</p>
-        <p>Copyright: ${data.copyright || 'N/A'}</p>
+        <p>Photographer: ${data.copyright || 'N/A'}</p>
     </div>
     `
 
