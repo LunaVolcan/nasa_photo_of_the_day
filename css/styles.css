@@ -95,6 +95,12 @@ p {
     img {
         margin: 10px 0;
     }
+
+    button {
+        
+        color: var(--body-color)
+
+    }
 }
 
 @media (min-width: 700px) and (max-width: 914px) {
@@ -119,7 +125,7 @@ p {
     }
 }
 
-@media (min-width:915px) and (max-width: 1500px) {
+@media (min-width:915px) and (max-width: 3000px) {
 
     #photos-container {
         display: grid;
@@ -141,8 +147,9 @@ p {
     }
 
     img {
-        max-width: 100%;
-        height: auto;
-        width: auto;
+        max-width: 60%;
+        display: block; /* Make the image a block-level element */
+        margin-left: auto; /* Automatically calculate left margin */
+        margin-right: auto;
     }
 }
